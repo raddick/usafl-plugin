@@ -3,7 +3,7 @@
 Plugin Name: USAFL Plugin
 Plugin URI: http://www.jordanraddick.com
 Description: Plugin to set up a list of players for a USAFL team
-Version: 1.0
+Version: 1.1
 Author: Jordan Raddick
 Author URI:http://www.jordanraddick.com
 Textdomain: usafl
