@@ -35,7 +35,6 @@ function usafl_register_post_type() {
 				'excerpt',
 				'custom-fields',
 				'thumbnail',
-				'post-thumbnail',
 				'page-attributes'
 			),
 		'taxonomies' => 'category',
