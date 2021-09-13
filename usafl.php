@@ -3,7 +3,7 @@
 Plugin Name: USAFL Plugin
 Plugin URI: http://www.jordanraddick.com
 Description: Plugin to set up a list of players for a USAFL team
-Version: 1.1
+Version: 1.1.1
 Author: Jordan Raddick
 Author URI:http://www.jordanraddick.com
 Textdomain: usafl
@@ -12,7 +12,7 @@ License: GPLv2
 
 function usafl_register_post_type() {
 	$labels = array(
-		 'name' => __( 'Player', 'usafl' ),
+		 'name' => __( 'Players', 'usafl' ),
 		 'singular_name' => __( 'Player', 'usafl' ),
 		 'add_new' => __( 'New Player', 'usafl' ),
 		 'add_new_item' => __( 'Add New Player', 'usafl' ),
