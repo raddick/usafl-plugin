@@ -3,7 +3,7 @@
 Plugin Name: USAFL Plugin
 Plugin URI: http://www.jordanraddick.com
 Description: Plugin to set up a list of players for a USAFL team
-Version: 1.1.1
+Version: 1.2
 Author: Jordan Raddick
 Author URI:http://www.jordanraddick.com
 Textdomain: usafl
@@ -132,7 +132,14 @@ function show_usafl_player_fields_meta_box() {
 	    		<input type="text" name="player_information[position]" id="player_information[position]" class="regular-text" value="<?php echo $meta['position']; ?>">
 	    	</div>
 		</div>
-
+        <div class='player_information_form_field'>
+	    	<div class='player_information_form_field_label'>
+	    		<label for="player_information[seasons]">Seasons</label>
+	    	</div>
+	    	<div class="player_information_form_field_control">
+	    		<input type="text" name="player_information[position]" id="player_information[seasons]" class="regular-text" value="<?php echo $meta['seasons']; ?>">
+	    	</div>
+		</div>
 	<?php }
 
 function save_usafl_player_fields_meta( $post_id ) {
