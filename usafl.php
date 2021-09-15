@@ -3,7 +3,7 @@
 Plugin Name: USAFL Plugin
 Plugin URI: http://www.jordanraddick.com
 Description: Plugin to set up a list of players for a USAFL team
-Version: 1.2.1
+Version: 1.3
 Author: Jordan Raddick
 Author URI:http://www.jordanraddick.com
 Textdomain: usafl
@@ -97,7 +97,7 @@ function show_usafl_player_fields_meta_box() {
 	    		<label for="player_information[number]">Number</label>
 	    	</div>
 	    	<div class="player_information_form_field_control">
-	    		<input type="text" name="player_information[number]" id="player_information[number]" class="regular-text" value="<?php echo $meta['number']; ?>">
+	    		<input type="text" name="player_information[number]" id="player_information[number]" class="regular-text" value="<?php echo htmlspecialchars($meta['number']); ?>">
 	    	</div>
 		</div>
         <div class='player_information_form_field'>
@@ -105,7 +105,7 @@ function show_usafl_player_fields_meta_box() {
 	    		<label for="player_information[age]">Age</label>
 	    	</div>
 	    	<div class="player_information_form_field_control">
-	    		<input type="text" name="player_information[age]" id="player_information[age]" class="regular-text" value="<?php echo $meta['age']; ?>">
+	    		<input type="text" name="player_information[age]" id="player_information[age]" class="regular-text" value="<?php echo htmlspecialchars($meta['age']); ?>">
 	    	</div>
 		</div>
         <div class='player_information_form_field'>
@@ -113,7 +113,7 @@ function show_usafl_player_fields_meta_box() {
 	    		<label for="player_information[height]">Height</label>
 	    	</div>
 	    	<div class="player_information_form_field_control">
-	    		<input type="text" name="player_information[height]" id="player_information[height]" class="regular-text" value="<?php echo $meta['height']; ?>">
+	    		<input type="text" name="player_information[height]" id="player_information[height]" class="regular-text" value="<?php echo htmlspecialchars($meta['height']); ?>">
 	    	</div>
 		</div>
         <div class='player_information_form_field'>
@@ -121,7 +121,7 @@ function show_usafl_player_fields_meta_box() {
 	    		<label for="player_information[nationality]">Nationality</label>
 	    	</div>
 	    	<div class="player_information_form_field_control">
-	    		<input type="text" name="player_information[nationality]" id="player_information[nationality]" class="regular-text" value="<?php echo $meta['nationality']; ?>">
+	    		<input type="text" name="player_information[nationality]" id="player_information[nationality]" class="regular-text" value="<?php echo htmlspecialchars($meta['nationality']); ?>">
 	    	</div>
 		</div>
         <div class='player_information_form_field'>
@@ -129,7 +129,7 @@ function show_usafl_player_fields_meta_box() {
 	    		<label for="player_information[position]">Position</label>
 	    	</div>
 	    	<div class="player_information_form_field_control">
-	    		<input type="text" name="player_information[position]" id="player_information[position]" class="regular-text" value="<?php echo $meta['position']; ?>">
+	    		<input type="text" name="player_information[position]" id="player_information[position]" class="regular-text" value="<?php echo htmlspecialchars($meta['position']); ?>">
 	    	</div>
 		</div>
         <div class='player_information_form_field'>
@@ -137,7 +137,7 @@ function show_usafl_player_fields_meta_box() {
 	    		<label for="player_information[seasons]">Seasons</label>
 	    	</div>
 	    	<div class="player_information_form_field_control">
-	    		<input type="text" name="player_information[seasons]" id="player_information[seasons]" class="regular-text" value="<?php echo $meta['seasons']; ?>">
+	    		<input type="text" name="player_information[seasons]" id="player_information[seasons]" class="regular-text" value="<?php echo htmlspecialchars($meta['seasons']); ?>">
 	    	</div>
 		</div>
 	<?php }
